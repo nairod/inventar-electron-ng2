@@ -1,0 +1,15 @@
+<div class="row">
+    <div class="col-md-6 col-md-offset-3">
+        <p class="lead">Inventar Liste
+        </p>
+
+    </div>
+
+    <div class="col-md-6 col-md-offset-3">
+        <ul class="list-group">
+            <li class="list-group-item clickable" *ngFor="let schmuck of inventarliste" (click)="openSchmuck(schmuck.id)">
+                {{schmuck.name}}
+            </li>
+        </ul>
+    </div>
+</div>

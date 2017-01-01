@@ -1,0 +1,14 @@
+<div class="row">
+    <div class="col-sm-10 col-sm-offset-1 col-md-6 col-md-offset-3" *ngIf="!!schmuck">
+        <p class="lead text-center">{{schmuck.name}}</p>
+        <div class="text-center">
+            <img [src]="schmuck.pictureUrl"/>
+        </div>
+    </div>
+</div>
+<div class="row" style="margin-top:20px;"><!-- :D -->
+    <div class="col-sm-10 col-sm-offset-1 col-md-6 col-md-offset-3 text-center" *ngIf="!!schmuck">
+            <button class="btn btn-default" [routerLink]="['/']">Back</button>
+            <button class="btn btn-primary" (click)="notify()">Notfiy</button>
+    </div>
+</div>
