@@ -22,6 +22,7 @@
       '@angular/http': 'npm:@angular/http/bundles/http.umd.js',
       '@angular/router': 'npm:@angular/router/bundles/router.umd.js',
       '@angular/forms': 'npm:@angular/forms/bundles/forms.umd.js',
+      'nedb': 'npm:nedb/browser-version/out/nedb.min.js',
 
       // other libraries
       'rxjs':                       'npm:rxjs',
@@ -30,7 +31,7 @@
     // packages tells the System loader how to load when no filename and/or no extension
     packages: {
       app: {
-        main: './boot.js',
+        main: './boot',
         defaultExtension: 'js'
       },
       rxjs: {
