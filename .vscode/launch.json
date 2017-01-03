@@ -8,8 +8,8 @@
             "type": "node",
             "request": "launch",
             "name": "Programm starten",
-            "program": "${workspaceRoot}/app/main.js",
-            "runtimeExecutable": "electron",
+            "program": "${workspaceRoot}/app/boot.js",
+            "runtimeExecutable": "${workspaceRoot}/node_modules/.bin/electron.cmd",
             "cwd": "${workspaceRoot}"
         },
         {
@@ -17,6 +17,15 @@
             "request": "attach",
             "name": "An den Prozess anfügen",
             "port": 5858
+        },
+        {
+            "name": "Attach Scotch",
+            "type": "node",
+            // TCP/IP address. Default is "localhost". 
+            "address": "localhost",
+            // Port to attach to.
+            "port": 5858,
+            "sourceMaps": false
         }
     ]
 }
